@@ -345,7 +345,7 @@ function GalleryScene({
         const imageAdvance =
             totalImages > 0 ? visibleCount % totalImages || totalImages : 0;
         const totalRange = depthRange;
-        const halfRange = totalRange / 2;
+        //const halfRange = totalRange / 2;
 
         planesData.current.forEach((plane, i) => {
             let newZ = plane.z + scrollVelocity * delta * 10;
