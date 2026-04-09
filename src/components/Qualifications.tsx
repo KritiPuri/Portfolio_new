@@ -79,10 +79,10 @@ export default function Qualifications() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="py-24 px-6 md:px-12 lg:px-24 bg-[#050505] text-white w-full relative z-30">
-            <div className="text-center mb-16 md:mb-24 qual-header">
+        <section ref={sectionRef} className="py-16 md:py-24 px-6 md:px-12 lg:px-24 bg-[#050505] text-white w-full relative z-30">
+            <div className="text-center mb-12 md:mb-24 qual-header">
                 <p className="text-purple-400 uppercase tracking-widest text-sm mb-4 font-semibold">Education Context</p>
-                <h2 className="text-5xl md:text-6xl font-bold font-serif italic">Academics</h2>
+                <h2 className="text-4xl md:text-6xl font-bold font-serif italic">Academics</h2>
             </div>
 
             <div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -87,13 +87,13 @@ export default function FeaturedProjects() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="py-24 px-6 md:px-12 lg:px-24 bg-[#030303] text-white w-full relative z-30">
-            <div ref={headerRef} className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24">
-                <div>
+        <section ref={sectionRef} className="py-16 md:py-24 px-6 md:px-12 lg:px-24 bg-[#030303] text-white w-full relative z-30">
+            <div ref={headerRef} className="flex flex-col items-center text-center mb-12 md:mb-24">
+                <div className="flex flex-col items-center">
                     <p className="text-purple-400 uppercase tracking-widest text-sm mb-4 font-semibold">Development</p>
-                    <h2 className="text-5xl md:text-7xl font-bold italic font-serif tracking-tight">Key<br />Projects</h2>
+                    <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold italic font-serif tracking-tight">Key Projects</h2>
                 </div>
-                <a href="https://github.com/KritiPuri" target="_blank" rel="noopener noreferrer" className="interactable mt-8 md:mt-0 group flex items-center gap-3 text-lg border-b border-purple-500/50 pb-1 hover:text-purple-300 transition-colors">
+                <a href="https://github.com/KritiPuri" target="_blank" rel="noopener noreferrer" className="interactable mt-8 group flex items-center gap-3 text-lg border-b border-purple-500/50 pb-1 hover:text-purple-300 transition-colors">
                     View GitHub
                     <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </a>
@@ -106,7 +106,7 @@ export default function FeaturedProjects() {
                             <img
                                 src={project.image}
                                 alt={project.title}
-                                className="w-full h-[400px] md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale hover:grayscale-0"
+                                className="w-full h-64 sm:h-80 md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale hover:grayscale-0"
                             />
                         </div>
                         <div className="w-full lg:w-2/5 flex flex-col justify-center">
@@ -114,8 +114,8 @@ export default function FeaturedProjects() {
                                 <span className="text-purple-400/80 tracking-wider text-sm font-semibold">{project.category}</span>
                                 <span className="text-gray-500 font-serif italic">{project.year}</span>
                             </div>
-                            <h3 className="text-4xl md:text-5xl font-bold mb-4 group-hover:text-purple-300 transition-colors">{project.title}</h3>
-                            <p className="text-gray-400 text-lg mb-8 leading-relaxed">{project.desc}</p>
+                            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 group-hover:text-purple-300 transition-colors">{project.title}</h3>
+                            <p className="text-gray-400 text-sm sm:text-base md:text-lg mb-8 leading-relaxed">{project.desc}</p>
                             <div className="w-12 h-12 rounded-full border border-gray-600 flex items-center justify-center group-hover:bg-purple-500 group-hover:border-purple-500 group-hover:text-white transition-all">
                                 <ArrowUpRight className="w-6 h-6" />
                             </div>

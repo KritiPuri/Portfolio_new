@@ -1,11 +1,19 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 
 export default function CustomCursor() {
     const cursorRef = useRef<HTMLDivElement>(null);
     const cursorDotRef = useRef<HTMLDivElement>(null);
+    const [isDesktop, setIsDesktop] = useState(true);
 
     useEffect(() => {
+        // Determine if device has a precise pointing device like a mouse
+        const checkPointer = () => window.matchMedia("(pointer: fine)").matches;
+        setIsDesktop(checkPointer());
+
+        // Don't initialize if it's a touch device
+        if (!checkPointer()) return;
+
         const cursor = cursorRef.current;
         const cursorDot = cursorDotRef.current;
 
@@ -74,6 +82,8 @@ export default function CustomCursor() {
             document.body.style.cursor = 'auto';
         };
     }, []);
+
+    if (!isDesktop) return null;
 
     return (
         <>

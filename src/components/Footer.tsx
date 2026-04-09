@@ -36,19 +36,19 @@ export default function Footer() {
     };
 
     return (
-        <footer ref={footerRef} className="py-24 px-6 md:px-12 lg:px-24 bg-black text-white w-full relative z-30 overflow-hidden rounded-t-[3rem] border-t border-gray-900">
-            <div className="flex flex-col items-center justify-center text-center mb-20 md:mb-32">
+        <footer ref={footerRef} className="py-16 md:py-24 px-6 md:px-12 lg:px-24 bg-black text-white w-full relative z-30 overflow-hidden rounded-t-[3rem] border-t border-gray-900">
+            <div className="flex flex-col items-center justify-center text-center mb-16 md:mb-32">
                 <p className="text-gray-400 tracking-widest uppercase text-sm font-semibold mb-6">Have an idea?</p>
-                <h2 ref={textRef} className="text-6xl md:text-[10rem] font-bold tracking-tighter leading-none interactable hover:text-gray-300 transition-colors cursor-pointer">
+                <h2 ref={textRef} className="text-5xl sm:text-6xl md:text-[10rem] font-bold tracking-tighter leading-none interactable hover:text-gray-300 transition-colors cursor-pointer">
                     Let's Talk
                 </h2>
-                <a href="mailto:kritipuri28@gmail.com" className="mt-12 text-2xl md:text-4xl font-serif italic border-b border-gray-700 pb-2 hover:border-white transition-colors interactable">
+                <a href="mailto:kritipuri28@gmail.com" className="mt-12 text-xl sm:text-2xl md:text-4xl font-serif italic border-b border-gray-700 pb-2 hover:border-white transition-colors interactable">
                     kritipuri28@gmail.com
                 </a>
             </div>
 
             <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800/50">
-                <div className="flex gap-8 mb-6 md:mb-0">
+                <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-6 md:mb-0">
                     <a href="https://leetcode.com/u/kriti_puri/" className="text-gray-400 hover:text-white transition-colors interactable text-sm font-semibold uppercase tracking-wider">Leetcode</a>
                     <a href="https://www.linkedin.com/in/kriti-puri-b38bab26b/" className="text-gray-400 hover:text-white transition-colors interactable text-sm font-semibold uppercase tracking-wider">LinkedIn</a>
                     <a href="https://www.hackerrank.com/profile/kritipuri28" className="text-gray-400 hover:text-white transition-colors interactable text-sm font-semibold uppercase tracking-wider">HackerRank</a>

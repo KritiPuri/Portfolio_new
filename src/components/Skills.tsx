@@ -66,10 +66,10 @@ export default function Skills() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="py-24 px-6 md:px-12 lg:px-24 bg-black text-white w-full relative z-30 border-t border-gray-900">
-            <div className="flex flex-col items-center text-center mb-16 md:mb-24 skills-header">
+        <section ref={sectionRef} className="py-16 md:py-24 px-6 md:px-12 lg:px-24 bg-black text-white w-full relative z-30 border-t border-gray-900">
+            <div className="flex flex-col items-center text-center mb-12 md:mb-24 skills-header">
                 <p className="text-purple-400 uppercase tracking-widest text-sm mb-4 font-semibold">Expertise</p>
-                <h2 className="text-5xl md:text-7xl font-bold font-serif italic max-w-3xl">Technical Skills</h2>
+                <h2 className="text-4xl md:text-7xl font-bold font-serif italic max-w-3xl">Technical Skills</h2>
             </div>
 
             <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-3 gap-8">

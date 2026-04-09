@@ -63,18 +63,18 @@ export default function Experiences() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="py-24 px-6 md:px-12 lg:px-24 bg-black text-white w-full relative z-30 border-t border-gray-900">
-            <div className="flex flex-col lg:flex-row gap-16 md:gap-24">
+        <section ref={sectionRef} className="py-16 md:py-24 px-6 md:px-12 lg:px-24 bg-black text-white w-full relative z-30 border-t border-gray-900">
+            <div className="flex flex-col gap-12 md:gap-16">
 
-                <div className="w-full lg:w-1/3 exp-header">
+                <div className="w-full exp-header flex flex-col items-center text-center">
                     <p className="text-purple-400 uppercase tracking-widest text-sm mb-4 font-semibold">Career</p>
-                    <h2 className="text-5xl md:text-7xl font-bold font-serif italic mb-8">Work<br />Experience</h2>
+                    <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold font-serif italic mb-6 md:mb-8">Work Experience</h2>
                     <p className="text-gray-400 leading-relaxed text-lg max-w-sm">
                         A detailed timeline of my professional frontend and software development experience.
                     </p>
                 </div>
 
-                <div ref={listRef} className="w-full lg:w-2/3 flex flex-col pt-8">
+                <div ref={listRef} className="w-full max-w-4xl mx-auto flex flex-col pt-4">
                     {experiences.map((exp, index) => (
                         <div
                             key={exp.id}
@@ -84,8 +84,8 @@ export default function Experiences() {
                                 <span className="text-purple-500/70 font-serif italic text-lg">{exp.period}</span>
                             </div>
                             <div className="md:w-3/4">
-                                <h3 className="text-3xl font-bold mb-2 group-hover:text-purple-300 transition-colors">{exp.role}</h3>
-                                <h4 className="text-xl text-gray-400 mb-6 group-hover:text-white transition-colors">{exp.company}</h4>
+                                <h3 className="text-2xl md:text-3xl font-bold mb-2 group-hover:text-purple-300 transition-colors">{exp.role}</h3>
+                                <h4 className="text-lg md:text-xl text-gray-400 mb-4 md:mb-6 group-hover:text-white transition-colors">{exp.company}</h4>
                                 <p className="text-gray-500 leading-relaxed max-w-2xl group-hover:text-gray-400 transition-colors">
                                     {exp.description}
                                 </p>

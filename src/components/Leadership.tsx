@@ -65,10 +65,10 @@ export default function Leadership() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="py-24 px-6 md:px-12 lg:px-24 bg-[#030303] text-white w-full relative z-30">
-            <div className="flex flex-col items-center text-center mb-16 md:mb-24 lead-header">
+        <section ref={sectionRef} className="py-16 md:py-24 px-6 md:px-12 lg:px-24 bg-[#030303] text-white w-full relative z-30">
+            <div className="flex flex-col items-center text-center mb-12 md:mb-24 lead-header">
                 <p className="text-pink-400 uppercase tracking-widest text-sm mb-4 font-semibold">Initiative</p>
-                <h2 className="text-5xl md:text-7xl font-bold font-serif italic max-w-3xl">Leadership</h2>
+                <h2 className="text-4xl md:text-7xl font-bold font-serif italic max-w-3xl">Leadership</h2>
             </div>
 
             <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">

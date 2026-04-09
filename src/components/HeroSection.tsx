@@ -65,11 +65,11 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black pointer-events-none"></div>
             
             <div className="z-10 mt-16">
-                <p className="hero-sub text-purple-400 font-mono tracking-widest uppercase mb-6 text-sm md:text-base">Hello, I'm</p>
-                <h1 className="hero-text text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-4 text-white">
+                <p className="hero-sub text-purple-400 font-mono tracking-widest uppercase mb-4 sm:mb-6 text-xs sm:text-sm md:text-base">Hello, I'm</p>
+                <h1 className="hero-text text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-4 text-white">
                     Kriti Puri
                 </h1>
-                <h2 className="hero-text text-2xl md:text-4xl text-gray-400 font-serif italic mb-8">
+                <h2 className="hero-text text-xl sm:text-2xl md:text-4xl text-gray-400 font-serif italic mb-8">
                     Frontend & Full-Stack Developer
                 </h2>
                 <div className="hero-sub flex gap-6 justify-center mt-8">
